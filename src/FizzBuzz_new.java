@@ -36,4 +36,7 @@ class FizzBuzz_new {
             }
         }
     }
+
+    public static void doFizzBuzzNew(int i) {
+    }
 }
