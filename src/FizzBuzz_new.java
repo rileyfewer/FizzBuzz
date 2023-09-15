@@ -1,15 +1,20 @@
 /**
  * Solve the FizzBuzz challenge.
  */
-class FizzBuzz {
+class FizzBuzz_new {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i < 100; i++) {
+        doFizzBuzzNew();
+    }
+
+    private static void doFizzBuzzNew() {
+        int i = 1;
+        while (i < 100) {
 
             // Find out which numbers divide i.
-            boolean divisibleBy3 = i % 3 == 0;
-            boolean divisibleBy5 = i % 5 == 0;
+            boolean divisibleBy3 = i % 3 == 0; i++;
+            boolean divisibleBy5 = i % 5 == 0; i++;
 
             // Print our appropriate result.
             if (divisibleBy3 && divisibleBy5) {
