@@ -6,18 +6,18 @@ But first, let's get you your own copy of this codebase to work with.
 ## Task 0 Forking a public repository on GitHub
 
 You should be currently reading this README on GitHub in the code repository:
-https://github.com/CSC207-2023F-UofT/FizzBuzz/
+https://github.com/CSC207-2023F-UofT/FizzBuzz_new/
 
 1. Make sure you are logged into GitHub. You should see a button that says `Fork` in the top-right corner of the page.
 Click this button to create a fork of this repository, which will be your own copy of the codebase to edit as you please.
-In the new page that comes up, confirm that you want to create the fork and your own FizzBuzz repository will be created
+In the new page that comes up, confirm that you want to create the fork and your own FizzBuzz_new repository will be created
 on GitHub!
 
 2. Now that you have your own fork of this repository, close this page, go to your fork, and continue with the next instructions.
 
-3. The next step is to get a local copy of your FizzBuzz repository on your own computer.
+3. The next step is to get a local copy of your FizzBuzz_new repository on your own computer.
 This is called **cloning** the repository.
-You can do this by clicking the green `Code` button in your FizzBuzz repository on GitHub and copying
+You can do this by clicking the green `Code` button in your FizzBuzz_new repository on GitHub and copying
 the HTTPS URL which you will see. You can copy it by clicking the little 'copy' button with the two rectangles on it.
 
 4. Open IntelliJ. If you already have a project open, close that project. From the main screen, choose
@@ -43,7 +43,7 @@ The markdown format is commonly used for things like readme files, as they allow
 which allows for basic typesetting when viewed while still being a plaintext format.
 
 Below is a blank checkbox:
-- [ ] Put an X in the [ ] to mark this as done!
+- [x] Put an X in the [ ] to mark this as done!
 
 You can edit this file directly to check off these checkboxes throughout the lab to mark things as done.
 Do so now for the checkbox above.
@@ -82,9 +82,9 @@ Let's explore a solution written in Java.
 
 ```java
 /**
- * Solve the FizzBuzz challenge.
+ * Solve the FizzBuzz_new challenge.
  */
-class FizzBuzz {
+class FizzBuzz_new {
 
     public static void main(String[] args) {
 
@@ -117,7 +117,7 @@ class FizzBuzz {
 }
 ```
 
-- [ ] Open `FizzBuzz.java` in the `src` directory and click the run button in the top left corner.
+- [x] Open `FizzBuzz_new.java` in the `src` directory and click the run button in the top left corner.
 
 If you don't see this button, you may need to mark `src` as the `Sources Root` for the project. You can do this
 by right-clicking the `src` directory in the `Project` tab and near the bottom of the context menu
@@ -135,7 +135,7 @@ the code are doing. For example, what's the Java version of Python's `and`? What
 on with that weird `for` loop? As you do this, you might find it useful to write down your
 own implementation in Python to help you begin to create a mapping between the two languages.
 
-- [ ] Make note of any specific Java syntax which stands out to you and compare what you
+- [x] Make note of any specific Java syntax which stands out to you and compare what you
 come up with those around you. Try to come up with a list of at least five things that
 strike you as either similar to or different from Python.
 
@@ -160,7 +160,7 @@ Later in this course, you'll learn what all that mess means, but for now it is e
 
 ### Task 1.1: Rewrite this using `while`
 
-- [ ] You've puzzled through how Java `for` and `if` statements work; now rewrite this
+- [x] You've puzzled through how Java `for` and `if` statements work; now rewrite this
 to use a `while` loop instead of a `for` loop.
 
 ## How to test this code
@@ -179,7 +179,7 @@ line or the closing brace `}` of the loop.
 
 3. Immediately, type the method name you want, maybe something like `doFizzBuzz`.
 
-- [ ] Rerun the program to verify.
+- [x] Rerun the program to verify.
 
 That's your first big IntelliJ trick! There are lots more.
 
@@ -192,14 +192,14 @@ You'll learn more about the various access modifiers in your Java readings soon.
 
 Now that you've made your first edits to your code, you should ask git to save these changes for you.
 
-- [ ] Open the Terminal tab in IntelliJ and type `git status`, it will show you that you have modified `FizzBuzz.java` (and this README too!).
+- [x] Open the Terminal tab in IntelliJ and type `git status`, it will show you that you have modified `FizzBuzz_new.java` (and this README too!).
 
-We will save our local changes to `FizzBuzz.java` and then push the changes to your GitHub repository using
+We will save our local changes to `FizzBuzz_new.java` and then push the changes to your GitHub repository using
 a sequence of three git commands:
 
-1. `git add src/FizzBuzz.java`
-   - this tells git to "stage" our changes to FizzBuzz.java. If you run `git status` again, you will see
-   that `FizzBuzz.java` has a new status.
+1. `git add src/FizzBuzz_new.java`
+   - this tells git to "stage" our changes to FizzBuzz_new.java. If you run `git status` again, you will see
+   that `FizzBuzz_new.java` has a new status.
 2. `git commit -m "refactored to extract helper method"`
    - this actually records your changes to all "staged" files to your local git repository. You can again
    run `git status` to see what has happened.
@@ -209,7 +209,7 @@ a sequence of three git commands:
 3. `git push`
    - this last step is what actually sends your committed changes to your remote GitHub repository.
 
-- [ ] Once you execute these commands, you can check your GitHub repository to confirm that the changes have been made there.
+- [x] Once you execute these commands, you can check your GitHub repository to confirm that the changes have been made there.
 
 - [ ] repeat the above steps for `README.md` (or try using the approach below).
 
@@ -236,20 +236,20 @@ To briefly observe what private does, let's create a new class.
 
 - [ ] Right-click on `src` and select `New —> Java Class`. Name it `Main`. This will create a `Main.java` file.
 
-We'll write a main method which will attempt to call `FizzBuzz.doFizzBuzz` (or whatever you called
+We'll write a main method which will attempt to call `FizzBuzz_new.doFizzBuzz` (or whatever you called
 your extracted helper method).
 
 - [ ] To quickly generate `main`, you can start typing `psvm` in IntelliJ and then press Enter to accept the
 autocomplete — it will generate an empty "public static void main" (psvm) method for you. Neat!
 
-- [ ] In the body of this main method, type `FizzBuzz.`. You'll see that the private helper method doesn't
-appear in the autocomplete, but `FizzBuzz.main` does! If you wanted to be able to call the helper from
+- [ ] In the body of this main method, type `FizzBuzz_new.`. You'll see that the private helper method doesn't
+appear in the autocomplete, but `FizzBuzz_new.main` does! If you wanted to be able to call the helper from
 inside `Main.java`, you would need to change the access modifier on the helper.
 It turns out that IntelliJ can help us out with this too!
 
 ### Task 3.1: Changing access modifiers using IntelliJ
 
-- [ ] In your main method in `Main.java`, try calling your private helper — something like `FizzBuzz.doFizzBuzz(5);`.
+- [ ] In your main method in `Main.java`, try calling your private helper — something like `FizzBuzz_new.doFizzBuzz(5);`.
 
 You'll see that IntelliJ flags that you are trying to access something that is private. Unlike Python,
 Java won't even let you run the code when it detects this kind of violation of an access modifier (it is an
@@ -263,15 +263,15 @@ These will be explained in more detail in your readings, but for now we can just
 - [ ] Choose this fix and the error will go away. Try running `Main.java` to see if it outputs
 what you expect.
 
-### Task 3.2: Calling `FizzBuzz.main` from `Main.main`
+### Task 3.2: Calling `FizzBuzz_new.main` from `Main.main`
 
-Suppose we wanted to execute a line like `FizzBuzz.main();` in `Main.main`. Why doesn't this work?
+Suppose we wanted to execute a line like `FizzBuzz_new.main();` in `Main.main`. Why doesn't this work?
 
 If you add this line to `Main.main`, IntelliJ will tell you the problem and suggest some fixes,
 but neither of them will *directly* fix the problem.
 
 * Talk with your neighbours to try to find the best way to resolve the problem so that you can run `Main.java` and
-see the expected output of executing `FizzBuzz.main`. If you come up with different ways to do this,
+see the expected output of executing `FizzBuzz_new.main`. If you come up with different ways to do this,
 think about how they differ and which might be best.
 
 And that's all we wanted to highlight with this first example. You'll see and learn much more Java syntax as you work
@@ -383,7 +383,7 @@ We'll briefly summarize two approaches you might take for this:
 
 ### Forking and requesting to make a contribution
 
-1. Share your FizzBuzz GitHub repository URL with another student in the class.
+1. Share your FizzBuzz_new GitHub repository URL with another student in the class.
 
 2. Have them make a fork of your repository; just as you did at the start of this activity.
 
